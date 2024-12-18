@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بازی رنگ‌آمیزی</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <h1>بازی رنگ‌آمیزی!</h1>
+    <p>روی رنگ‌ها کلیک کنید تا رنگ مستطیل تغییر کند:</p>
+
+    <div id="color-box" class="color-box" style="background-color: #ffffff;"></div>
+
+    <div>
+        <div class="color-box" style="background-color: #ff0000;" onclick="changeColor('#ff0000')"></div>
+        <div class="color-box" style="background-color: #00ff00;" onclick="changeColor('#00ff00')"></div>
+        <div class="color-box" style="background-color: #0000ff;" onclick="changeColor('#0000ff')"></div>
+        <div class="color-box" style="background-color: #ffff00;" onclick="changeColor('#ffff00')"></div>
+        <div class="color-box" style="background-color: #ff69b4;" onclick="changeColor('#ff69b4')"></div>
+        <div class="color-box" style="background-color: #00ffff;" onclick="changeColor('#00ffff')"></div>
+    </div>
+
+    <div class="message" id="message"></div>
+
+    <script>
+        console.log('wellcome');
+        
+        function changeColor(color) {
+            const colorBox = document.getElementById('color-box');
+            colorBox.style.backgroundColor = color;
+
+            const message = document.getElementById('message');
+        }
+    </script>
+
+</body>
+</html>
